@@ -1,0 +1,17 @@
+.blogcard-1div-1p {
+  width: 25rem;
+}
+
+/* tab */
+@media (min-width: 40rem) {
+  .blogcard-1div-1p {
+    width: 12rem;
+  }
+}
+
+/*lap */
+@media (min-width: 80rem) {
+  .blogcard-1div-1p {
+    width: 9rem;
+  }
+}

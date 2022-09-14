@@ -1,0 +1,22 @@
+.blog-1div {
+  margin: 0 auto;
+  width: 90%;
+}
+.blog-1div > p {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+/* tab */
+@media (min-width: 40rem) {
+  .blog-1div {
+    width: 70%;
+  }
+}
+
+/*lap */
+@media (min-width: 80rem) {
+  .blog-1div {
+    width: 50%;
+  }
+}

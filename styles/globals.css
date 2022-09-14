@@ -4,6 +4,8 @@
 @import url("./components/design/header.css");
 @import url("./Home.module.css");
 @import url("./components/design/footer.css");
+@import url("./blog.css");
+@import url("./components/custom/Blogcard.css");
 
 /*Reusable css start*/
 * {
