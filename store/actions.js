@@ -30,6 +30,18 @@ export const tagAdd = async (payload) => {
     return { success: false, message: err.response.data.message };
   }
 };
+export const subscribe = async (payload) => {
+  try {
+    const response = await axios({
+      method: "POST",
+      url: `${process.env.baseUrl}/v1/general/add-subscriber`,
+      data: payload,
+    });
+    return response.data;
+  } catch (err) {
+    return { success: false, message: err.response.data.message };
+  }
+};
 
 export const tagsGet = async () => {
   try {

@@ -58,6 +58,7 @@ const Compose = () => {
     <div className="mx-1">
       <form onSubmit={form.onSubmit((v) => handleSubmit(v))}>
         <TextInput
+          name="topic"
           withAsterisk
           label="Topic"
           placeholder="Enter the topic here"
@@ -80,7 +81,7 @@ const Compose = () => {
             {...form.getInputProps("tags")}
           />
         </div>
-        <div className="flex justifycenter">
+        <div className="flex justifycenter mb-5">
           <Button type="submit">Submit</Button>
         </div>
       </form>

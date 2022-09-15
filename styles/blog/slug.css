@@ -1,0 +1,36 @@
+.blogslug-1div {
+  margin: 0 auto;
+  width: 90%;
+}
+.blogslug-1div > p {
+  margin-bottom: 1.8rem;
+}
+.blogslug-1div > p :first-child {
+  font-size: 1.7rem;
+  color: #333;
+}
+.blogslug-1div > p :last-child {
+  color: #888;
+}
+.blogslug-2div {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.7em;
+  font-size: 17px;
+  /* background-color: red; */
+}
+
+/* tab */
+@media (min-width: 40rem) {
+  .blogslug-1div {
+    width: 70%;
+  }
+}
+
+/*lap */
+@media (min-width: 80rem) {
+  .blogslug-1div {
+    width: 50%;
+  }
+}

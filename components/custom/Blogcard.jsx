@@ -1,5 +1,6 @@
 // import React from 'react'
 import moment from "moment";
+import Link from "next/link";
 
 const Blogcard = ({ data }) => {
   const date = moment(data.createdAt).format("Do MMM YYYY").split(" ");
@@ -13,17 +14,18 @@ const Blogcard = ({ data }) => {
           <span style={{ fontSize: "0.9rem" }}>{date[2]}</span>
         </p>
         <p>
-          <a
-            target={"_blank"}
-            href={`/blog/${data.slug}`}
-            style={{
-              color: "darkblue",
-              fontWeight: "bold",
-              textDecoration: "none",
-            }}
-          >
-            {data.topic}
-          </a>
+          <Link href={`/blog/${data.slug}`}>
+            <a
+              // target={"_blank"}
+              style={{
+                color: "darkblue",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              {data.topic}
+            </a>
+          </Link>
         </p>
       </div>
       <hr style={{ opacity: "0.2" }} />

@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 @import url("./components/design/header.css");
 @import url("./Home.module.css");
 @import url("./components/design/footer.css");
 @import url("./blog.css");
 @import url("./components/custom/Blogcard.css");
+@import url("./blog/slug.css");
 
 /*Reusable css start*/
 * {
@@ -21,13 +23,25 @@
   margin-left: auto;
   margin-right: auto;
 }
-.mx-1{
-    margin-left: 1rem;
-    margin-right: 1rem;
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .my-1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mb-1{
+  margin-bottom: 1rem;
+}
+.mb-5{
+  margin-bottom: 5rem;
+}
+.aligncenter{
+  align-items: center;
+}
+.sharp-radius{
+  border-radius: 0;
 }
 /*Reusable css start*/
 
