@@ -8,7 +8,7 @@ const Header = () => {
         <div>
           <img
             src="https://media-exp1.licdn.com/dms/image/C4D03AQEGLgrAjJAXxA/profile-displayphoto-shrink_800_800/0/1662497414233?e=1668643200&amp;v=beta&amp;t=CZ10RzvMqinH_Rb8iRbdP61jGzzFTyStisCSQyi7Wuo"
-            alt=""
+            alt="harshvardhan singh's personal hompage"
             style={{ width: "6rem", borderRadius: "50%" }}
           />
         </div>

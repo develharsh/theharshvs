@@ -1,8 +1,9 @@
 // import React from "react";
 import axios from "axios";
-import { TypographyStylesProvider } from "@mantine/core";
+import { TypographyStylesProvider, Badge } from "@mantine/core";
 import moment from "moment";
 import Seo from "../../components/seo";
+import Link from "next/link";
 
 const BlogSpecific = ({ blog }) => {
   return (
@@ -22,6 +23,21 @@ const BlogSpecific = ({ blog }) => {
             className="blogslug-2div"
           />
         </TypographyStylesProvider>
+        <div style={{ marginBottom: "1.3rem" }}>
+          {blog.tags.map((each, idx) => (
+            <Link href={`/blog?tag=${each}`} key={idx}>
+              <a className="no-txt-decor">
+                <Badge
+                  variant="gradient"
+                  gradient={{ from: "indigo", to: "cyan" }}
+                  sx={{ marginRight: "0.5rem", cursor: "pointer" }}
+                >
+                  {each}
+                </Badge>
+              </a>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );

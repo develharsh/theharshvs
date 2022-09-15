@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 @import url("./components/design/header.css");
 @import url("./Home.module.css");
@@ -31,17 +31,26 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.mb-1{
+.mb-1 {
   margin-bottom: 1rem;
 }
-.mb-5{
+.mb-5 {
   margin-bottom: 5rem;
 }
-.aligncenter{
+.aligncenter {
   align-items: center;
 }
-.sharp-radius{
+.sharp-radius {
   border-radius: 0;
+}
+.no-txt-decor {
+  text-decoration: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.bg-red {
+  background: Red;
 }
 /*Reusable css start*/
 

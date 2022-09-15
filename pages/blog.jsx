@@ -4,13 +4,13 @@ import { DataContext } from "../store/globalstate";
 import Blogcard from "../components/custom/Blogcard";
 import Seo from "../components/seo";
 
-const Blog = () => {
+const Blog = ({ tag }) => {
   const { dispatch } = useContext(DataContext);
   const [blogs, setBlogs] = useState(null);
   useEffect(() => {
     if (!blogs) {
       dispatch({ type: ACTIONS.loading, payload: true });
-      fetchBlogs(setBlogs);
+      fetchBlogs(setBlogs, tag);
     } else {
       dispatch({ type: ACTIONS.loading, payload: false });
     }
@@ -28,9 +28,16 @@ const Blog = () => {
   );
 };
 
-const fetchBlogs = async (setBlogs) => {
-  const resp = await blogsGet();
+const fetchBlogs = async (setBlogs, tag) => {
+  const resp = await blogsGet(tag);
   if (resp.success) setBlogs(resp.blogs);
 };
+
+export async function getServerSideProps(context) {
+  // const { req, res } = context;
+  let { tag } = context.query;
+  if (!tag) tag = null;
+  return { props: { tag } };
+}
 
 export default Blog;
