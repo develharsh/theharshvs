@@ -22,9 +22,9 @@ const Header = () => {
         <Link href="/">
           <a>Home</a>
         </Link>
-        {/* <Link href="/blog"> */}
-          <a href="/blog">Musings</a>
-        {/* </Link> */}
+        <Link href="/blog">
+          <a>Musings</a>
+        </Link>
       </div>
     </div>
   );
