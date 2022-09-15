@@ -9,7 +9,7 @@ module.exports = {
   env: {
     // MONGODB_URL:
       // "mongodb+srv://hvs:thakur@cluster0.dqdk6.mongodb.net/production",
-    baseUrl: "http://localhost:3001",
-    // baseUrl: "https://gadifor.me",
+    // baseUrl: "http://localhost:3001",
+    baseUrl: "https://theharshvs.herokuapp.com",
   },
 };
