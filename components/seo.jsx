@@ -11,8 +11,8 @@ const Seo = ({ title }) => {
         type="image/x-icon"
       />
       {/* <meta name="theme-color" content="purple" /> */}
-      <link rel="canonical" href="https://www.theharshvs.me" />
-      <meta property="og:url" content="https://www.theharshvs.me" />
+      <link rel="canonical" href="https://www.harshvsingh.me" />
+      <meta property="og:url" content="https://www.harshvsingh.me" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="https://media-exp1.licdn.com/dms/image/C4D03AQEGLgrAjJAXxA/profile-displayphoto-shrink_800_800/0/1662497414233?e=1668643200&amp;v=beta&amp;t=CZ10RzvMqinH_Rb8iRbdP61jGzzFTyStisCSQyi7Wuo" />
       <meta

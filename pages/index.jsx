@@ -21,11 +21,11 @@ const Home = () => {
           <br></br>
           <br></br>
           Find me on{" "}
-          <a href="https://www.linkedin.com/in/theharshvs/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/harshvsinghme/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>{" "}
           and{" "}
-          <a href="https://twitter.com/theharshvs" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/harshvsinghme" target="_blank" rel="noreferrer">
             Twitter
           </a>
           .<br></br>
