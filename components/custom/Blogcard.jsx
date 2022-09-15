@@ -12,10 +12,10 @@ const Blogcard = ({ data }) => {
     <>
       <Grid>
         <Grid.Col
-          span={isDesk ? 3 : isTab ? 3 : 4}
+          span={isDesk ? 3 : isTab ? 3 : 5}
           // style={{ background: isDesk ? "blue" : isTab ? "red" : "green" }}
         >
-          <p style={{ color: "#888" }} className="blogcard-1div-1p">
+          <p style={{ color: "#888" }}>
             <span style={{ fontSize: "1.3rem" }}>{date[0]}</span>{" "}
             <span style={{ fontSize: "0.9rem" }}>{date[1]}</span>{" "}
             <span style={{ fontSize: "0.9rem" }}>{date[2]}</span>
@@ -23,7 +23,7 @@ const Blogcard = ({ data }) => {
         </Grid.Col>
 
         <Grid.Col
-          span={isDesk ? 9 : isTab ? 9 : 8}
+          span={isDesk ? 9 : isTab ? 9 : 7}
           // style={{ background: isDesk ? "green" : isTab ? "blue" : "red" }}
         >
           <p>
