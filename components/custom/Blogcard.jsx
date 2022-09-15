@@ -1,33 +1,48 @@
 // import React from 'react'
 import moment from "moment";
 import Link from "next/link";
+import { Grid } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 const Blogcard = ({ data }) => {
   const date = moment(data.createdAt).format("Do MMM YYYY").split(" ");
+  const isDesk = useMediaQuery("(min-width: 80rem)");
+  const isTab = useMediaQuery("(min-width: 40rem)");
   return (
     <>
-      {" "}
-      <div className="flex" style={{ gap: "4rem" }}>
-        <p style={{ color: "#888" }} className="blogcard-1div-1p">
-          <span style={{ fontSize: "1.3rem" }}>{date[0]}</span>{" "}
-          <span style={{ fontSize: "0.9rem" }}>{date[1]}</span>{" "}
-          <span style={{ fontSize: "0.9rem" }}>{date[2]}</span>
-        </p>
-        <p>
-          <Link href={`/blog/${data.slug}`}>
-            <a
-              // target={"_blank"}
-              style={{
-                color: "darkblue",
-                fontWeight: "bold",
-                textDecoration: "none",
-              }}
-            >
-              {data.topic}
-            </a>
-          </Link>
-        </p>
-      </div>
+      <Grid>
+        <Grid.Col
+          span={isDesk ? 3 : isTab ? 3 : 4}
+          // style={{ background: isDesk ? "blue" : isTab ? "red" : "green" }}
+        >
+          <p style={{ color: "#888" }} className="blogcard-1div-1p">
+            <span style={{ fontSize: "1.3rem" }}>{date[0]}</span>{" "}
+            <span style={{ fontSize: "0.9rem" }}>{date[1]}</span>{" "}
+            <span style={{ fontSize: "0.9rem" }}>{date[2]}</span>
+          </p>
+        </Grid.Col>
+
+        <Grid.Col
+          span={isDesk ? 9 : isTab ? 9 : 8}
+          // style={{ background: isDesk ? "green" : isTab ? "blue" : "red" }}
+        >
+          <p>
+            <Link href={`/blog/${data.slug}`}>
+              <a
+                // target={"_blank"}
+                style={{
+                  color: "darkblue",
+                  fontWeight: "bold",
+                  textDecoration: "none",
+                }}
+              >
+                {data.topic}
+              </a>
+            </Link>
+          </p>
+        </Grid.Col>
+      </Grid>
+
       <hr style={{ opacity: "0.2" }} />
     </>
   );
