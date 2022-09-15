@@ -20,6 +20,7 @@ const Blog = ({ tag }) => {
     <>
       <Seo title="Musing &amp; Blog - Harshvardhan Singh" />
       <div className="blog-1div">
+        {tag && <p>{tag}</p>}
         {blogs?.map((each, idx) => (
           <Blogcard data={each} key={idx} />
         ))}
