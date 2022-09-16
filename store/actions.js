@@ -43,12 +43,12 @@ export const tagsGet = async () => {
   }
 };
 
-export const blogsGet = async (tag) => {
+export const blogsGet = async (tag, activePage) => {
   if (!tag) tag = "";
   try {
     const response = await axios({
       method: "GET",
-      url: `${process.env.baseUrl}/v1/blog/get?tag=${tag}`,
+      url: `${process.env.baseUrl}/v1/blog/get?page=${activePage}&tag=${tag}`,
     });
     return response.data;
   } catch (err) {

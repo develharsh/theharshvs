@@ -3,18 +3,21 @@ import { blogsGet, ACTIONS } from "../store/actions";
 import { DataContext } from "../store/globalstate";
 import Blogcard from "../components/custom/Blogcard";
 import Seo from "../components/seo";
+import { Pagination } from "@mantine/core";
+import { useRouter } from "next/router";
 
-const Blog = ({ tag }) => {
+const Blog = ({ tag, page }) => {
+  const router = useRouter();
   const { dispatch } = useContext(DataContext);
   const [blogs, setBlogs] = useState(null);
+  const [activePage, setPage] = useState(page);
+  const [noOfPages, setNoOfPages] = useState(1);
+
   useEffect(() => {
-    if (!blogs) {
-      dispatch({ type: ACTIONS.loading, payload: true });
-      fetchBlogs(setBlogs, tag);
-    } else {
-      dispatch({ type: ACTIONS.loading, payload: false });
-    }
-  }, [blogs]);
+    // alert(activePage);
+    fetchBlogs(setBlogs, setNoOfPages, dispatch, tag, activePage);
+    router.push(`/blog?page=${activePage}&tag=${!tag ? "" : tag}`);
+  }, [activePage]);
 
   return (
     <>
@@ -24,21 +27,36 @@ const Blog = ({ tag }) => {
         {blogs?.map((each, idx) => (
           <Blogcard data={each} key={idx} />
         ))}
+        <div className="flex justifycenter">
+          <Pagination page={activePage} onChange={setPage} total={noOfPages} />
+        </div>
       </div>
     </>
   );
 };
 
-const fetchBlogs = async (setBlogs, tag) => {
-  const resp = await blogsGet(tag);
-  if (resp.success) setBlogs(resp.blogs);
+const fetchBlogs = async (
+  setBlogs,
+  setNoOfPages,
+  dispatch,
+  tag,
+  activePage
+) => {
+  dispatch({ type: ACTIONS.loading, payload: true });
+  const resp = await blogsGet(tag, activePage);
+  if (resp.success) {
+    setBlogs(resp.blogs);
+    setNoOfPages(resp.noOfPages);
+  }
+  dispatch({ type: ACTIONS.loading, payload: false });
 };
 
 export async function getServerSideProps(context) {
   // const { req, res } = context;
-  let { tag } = context.query;
+  let { tag, page } = context.query;
   if (!tag) tag = null;
-  return { props: { tag } };
+  if (!page) page = 1;
+  return { props: { tag, page } };
 }
 
 export default Blog;
