@@ -8,7 +8,7 @@
 import Header from "./design/header";
 import Footer from "./design/footer";
 import Loading from "./design/loading";
-import Subscribe from "./design/subscribe";
+// import Subscribe from "./design/subscribe";
 import Router from "next/router";
 import NProgress from "nprogress";
 
@@ -27,7 +27,7 @@ function layout({ children }) {
       <Header />
       <Loading />
       {children}
-      <Subscribe />
+      {/* <Subscribe /> */}
       <Footer />
     </>
   );
