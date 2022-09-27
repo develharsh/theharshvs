@@ -22,13 +22,6 @@ const Seo = ({ title }) => {
         content="https://media-exp1.licdn.com/dms/image/C4D03AQEGLgrAjJAXxA/profile-displayphoto-shrink_800_800/0/1662497414233?e=1668643200&amp;v=beta&amp;t=CZ10RzvMqinH_Rb8iRbdP61jGzzFTyStisCSQyi7Wuo"
       />
       <meta
-        name="description"
-        content="I am Harsh, and currently working as Full Stack Developer. This is my
-          personal homepage. I love exploring, learning &amp; talking about
-          markets, economy, finance, consumer behaviour, investments, tech,
-          startups and much more"
-      />
-      <meta
         property="og:description"
         name="description"
         content="I am Harsh, and currently working as Full Stack Developer. This is my

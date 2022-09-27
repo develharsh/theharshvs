@@ -27,18 +27,17 @@ const Blogcard = ({ data }) => {
           // style={{ background: isDesk ? "green" : isTab ? "blue" : "red" }}
         >
           <p>
-            <Link href={`/blog/${data.slug}`}>
-              <a
-                // target={"_blank"}
-                style={{
-                  color: "darkblue",
-                  fontWeight: "bold",
-                  textDecoration: "none",
-                }}
-              >
-                {data.topic}
-              </a>
-            </Link>
+            <a
+              href={`/blog/${data.slug}`}
+              // target={"_blank"}
+              style={{
+                color: "darkblue",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              {data.topic}
+            </a>
           </p>
         </Grid.Col>
       </Grid>

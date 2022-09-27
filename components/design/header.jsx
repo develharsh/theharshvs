@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div>
           <p>Harshvardhan Singh</p>
-          <p>Musings on tech, economics, finance, business, and life</p>
+          <p>Musings on coding, web/app development and technology</p>
         </div>
       </div>
 
