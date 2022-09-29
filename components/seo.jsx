@@ -26,14 +26,14 @@ const Seo = ({ title }) => {
         name="description"
         content="I am Harsh, and currently working as Full Stack Developer. This is my
           personal homepage. I love exploring, learning &amp; talking about
-          markets, economy, finance, consumer behaviour, investments, tech,
-          startups and much more"
+          coding, web development, app development, new technologies and much
+          more"
       />
       <meta name="lang" content="en" />
       <meta name="keywords" content="Harshvardhan Singh, Blogs, Musing" />
       <meta
         name="google-site-verification"
-        content="eFVLIiMdXuJDGWylPTLGCunY35ZXVD2iz5LnG_Ns-RI"
+        content="TEPiIgXuqCvLjGMBktviJOZYO0eilnU9m7yzVo_R9hs"
       />
     </Head>
   );
