@@ -19,7 +19,7 @@ const Home = () => {
           Lately, I have been sharing my views through social media, and blog
           posts. This website is a collection of my musings, the insights
           I&apos;ve gained and still gaining that I want to share.
-          <br></br>
+          {/* <br></br>
           <br></br>
           Find me on{" "}
           <a
@@ -55,7 +55,7 @@ const Home = () => {
           </a>
           .<br></br>
           <br></br>
-          <br></br>
+          <br></br> */}
         </p>
       </div>
     </>

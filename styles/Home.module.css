@@ -23,5 +23,6 @@
 @media (min-width: 80rem) {
   .home-1div {
     width: 50%;
+    margin-bottom: 6rem;
   }
 }
