@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+<h1 align="center">Welcome to developer-portfolio 👋</h1>
+<a href="https://github.com/1hanzla100/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/1hanzla100/developer-portfolio"></a><a href="https://github.com/1hanzla100/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/1hanzla100/developer-portfolio"></a><a href="https://github.com/1hanzla100/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/1hanzla100/developer-portfolio"></a> <a href="https://github.com/1hanzla100/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/1hanzla100/developer-portfolio"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Software Developer Portfolio Template built with Next.js, bootstrap that helps you showcase your work and skills as a software developer.
 
-## Available Scripts
+<p align="center">
+  <kbd>
+    <img src="https://github.com/1hanzla100/developer-portfolio/blob/master/picture.PNG"></img>
+  </kbd>
+</p>
 
-In the project directory, you can run:
+## To view a live example, **[click here](https://developer-portfolio-1hanzla100.vercel.app/)**.
 
-### `npm start`
+Just Edit `portfolio.js` to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/1hanzla100/developer-portfolio/issues).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you created something awesome and want to contribute then feel free to open an [pull request](https://github.com/1hanzla100/developer-portfolio/pulls).
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Sections
 
-### `npm run build`
+✔️ Summary and About me\
+✔️ Skills\
+✔️ Education\
+✔️ Work Experience\
+✔️ Feedbacks\
+✔️ Projects\
+✔️ Github Profile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
+<br>
+**For Windows** Install Visual C++ Build Environment: [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools)
 
-### `npm run eject`
+```
+node@v10.16.0 or higher
+npm@6.9.0 or higher
+git@2.17.1 or higher
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How To Use
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork this repoistory and clone it to your local machine.
+```bash
+$ git clone https://github.com/<your-username>/developer-portfolio.git
+``` 
+2. Go into the repository
+```bash
+$ cd developer-portfolio
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install dependencies
+```bash
+$ yarn
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Edit `portfolio.js`
 
-## Learn More
+5. Start's development server
+```bash
+$ yarn dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Linking Portfolio to Github
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascript
+  //  portfolio.js
+  githubUserName: 'YOUR GITHUB USERNAME HERE',
+```
 
-### Code Splitting
+#### Using Emojis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` function and pass the text you need as an argument. This would help in keeping emojis compatible across different browsers and platforms.
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-   [Next.js](https://nextjs.org/)
+-   [axios](https://www.npmjs.com/package/axios)
+-   [reactstrap](https://reactstrap.github.io/)
+-   [react-reveal](https://www.react-reveal.com/)
+-   [react-lottie](https://www.npmjs.com/package/react-lottie)
+-   [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
+-   [react-headroom](https://github.com/KyleAMathews/react-headroom)
+-   [color-thief](https://github.com/lokesh/color-thief)
 
-### Making a Progressive Web App
+## Illustrations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-   [Lottie File Source](https://lottiefiles.com)
 
-### Advanced Configuration
+## Icons
+Iconify Icons are used in skill section. You can find all the icons here: [Iconify](https://icon-sets.iconify.design/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## For the Future
 
-### Deployment
+If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/1hanzla100/developer-portfolio/pulls).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-   Enable Dark Mode
 
-### `npm run build` fails to minify
+-   Add More Sections
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+👤 **Hanzla Tauqeer**
+
+-   Website: https://hanzla.netlify.app
+-   Github: [@1hanzla100](https://github.com/1hanzla100)
+-   LinkedIn: [@1hanzla100](https://linkedin.com/in/1hanzla100)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
